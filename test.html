@@ -8,6 +8,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+	        overflow: hidden;
         }
 
         .background {
@@ -29,7 +30,7 @@
         .image-container img {
             width: auto; /* Reset the width to auto */
             height: 100%; /* Set the height to 100% of the parent container */
-            animation: rotate 0.5s infinite linear;
+            animation: rotate 1s infinite linear;
         }
 
         @keyframes rotate {
@@ -56,9 +57,8 @@
 	</style>
 </head>
 <body>
-<div class="background">
-</div><div class="image-container"><img alt="Image" src="emu-otori.png" /> 
-<button class="invisible-button" onclick="window.location.href='courtesy.html'"></button>
-</div>
+<div class="background"></div>
+
+<div class="image-container"><img alt="Image" src="emu-otori.png" /><button class="invisible-button" onclick="window.location.href='courtesy.html'"></button></div>
 </body>
 </html>
