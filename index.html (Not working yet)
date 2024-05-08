@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Emu Otori</title>
-    <style type="text/css">
-        body {
+<head><meta charset="utf-8">
+	<title>Emu Otori</title>
+	<style type="text/css">body {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,23 +56,23 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             background: transparent;
             border: none;
             outline: none;
-            cursor: pointer;
+            cursor: cursor;
+            -webkit-user-select: none;
+            -ms-user-select: none; 
+            user-select: none; 
         }
-    </style>
+
+	</style>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="image-container">
-        <img alt="Image" src="emu-otori.png" />
-        <button class="invisible-button" onclick="rotateImage()"></button>
-    </div>
-
-    <script>
+<div class="background"></div>
+<div class="image-container"><img alt="Image" src="emu-otori.png" /><button class="invisible-button" onclick="rotateImage()"></button></div>
+<script>
         function rotateImage() {
             var imageContainer = document.querySelector('.image-container');
             if(imageContainer.style.animation === 'rotateX 1s infinite linear') {
@@ -83,6 +81,5 @@
                 imageContainer.style.animation = 'rotateX 1s infinite linear';
             }
         }
-    </script>
-</body>
+    </script></body>
 </html>
