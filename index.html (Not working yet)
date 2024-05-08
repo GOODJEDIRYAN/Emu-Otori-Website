@@ -62,15 +62,13 @@
             border: none;
             outline: none;
             cursor: cursor;
-            -webkit-user-select: none;
-            -ms-user-select: none; 
-            user-select: none; 
-        }
 
+        }
 	</style>
 </head>
 <body>
 <div class="background"></div>
+
 <div class="image-container"><img alt="Image" src="emu-otori.png" /><button class="invisible-button" onclick="rotateImage()"></button></div>
 <script>
         function rotateImage() {
